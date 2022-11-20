@@ -1,10 +1,20 @@
 body {
   background-image: url('../weather.jpg');
   background-size: cover;
+  background-position: center auto bottom auto;
 }
 
 .container {
   max-width: 1080px;
   margin: 20px auto;
   /* background-color: #66e0ff; */
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-image: url('../weather.jpg');
+    background-repeat: no-repeat;
+    background-position: center auto bottom auto;
+    background-size: 1920px auto;
+  }
 }
