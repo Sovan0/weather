@@ -8,7 +8,7 @@ import  { GEO_API_URL, geoApiOptions } from '../../api';
 
     const loadOptions = (inputValue) => {
         return fetch(
-            `${GEO_API_URL}/cities?minPopulation=1000000&namePrefix=${inputValue}`, 
+            `${GEO_API_URL}/cities?minPopulation=10000&namePrefix=${inputValue}`, 
             geoApiOptions
         )
         .then(response => response.json())
